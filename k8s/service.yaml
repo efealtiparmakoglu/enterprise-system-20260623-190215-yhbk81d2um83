@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260623-190215-yhbk81d2um83-service
+spec:
+  selector:
+    app: enterprise-system-20260623-190215-yhbk81d2um83
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
